@@ -25,18 +25,18 @@
             font-style: normal;
         }
 
-        ::-moz-selection {
-        color: rgb(55, 0, 149);
-        background: rgba(100, 28, 28, 0.438)
-        }
-
         ::selection {
-        color: rgb(9, 243, 255);
-        background: rgba(100, 28, 28, 0.438)
+        color: rgb(26, 26, 26);
+        background: rgb(255, 255, 255)
         }
 
         body {
             background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden!important;
+            
         }
 
         #bg {
@@ -52,11 +52,12 @@
             font-family: "baskerville-display-pt", serif;
             font-weight: 400;
             font-style: normal;
+            cursor: pointer;
         }
 
         h2 {
-            font-size: 0.75em;
-            margin-bottom: 5vh;
+            font-size: 0.8rem;
+
         }
 
         td {
@@ -68,22 +69,36 @@
             font-stretch: ultra-condensed;
         }
 
-        #container1 {
-            max-width: 100vw;
-            padding-top: 7vh;
+        header {
+            background-color: #282828;
+
+
+            width: 100vw;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #container1 {
+            width: 100vw;
+            padding-top: 4vh;
+            display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
+
         }
 
         nav {
             display: flex;
             flex-direction: row;
-            font-size: 1.4em;
+            font-size: 1.3em;
             text-align: center;
             flex-wrap: wrap;
             justify-content: space-around;
+            padding-left: 5%;
+            
         }
 
         #box {
@@ -91,9 +106,22 @@
             height: 30em;
             background-color: black;
         }
+
+        iframe {
+            margin: 5vh;
+        }
+
+        footer {
+            background-color: #282828;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 5vh;
+
+        }
     
-
-
 
         a {
             margin: 30px;
@@ -120,7 +148,7 @@
         }
 
         #rodape {
-            margin-right: 820px;
+            padding: 5vh;
         }
 
         /* ===== Scrollbar CSS ===== */
@@ -144,6 +172,36 @@
     border-radius: 0px;
     border: 3px none #ffffff;
   }
+  
+
+  .curtabox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #imgbox {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .h1curta {
+    padding: 10vh 00 0vh 00;
+    font-size: 3em;
+            font-family: "baskerville-display-pt", serif;
+            font-weight: 400;
+            font-style: normal;
+  }
+
+  .txtcurta {
+    padding: 00 25vw 00 25vw;
+  }
+
+  .imgcurtas {
+    width: 480;
+    height: 360;
+  }
+
 
 
 
@@ -151,38 +209,44 @@
 </head>
 <body>
     <img id="bg" draggable="false" src="https://i.ibb.co/NWj4MDs/5-1024x767.png" alt="rio paraná">
+    <header>
+    <h2>A SECRETARIA DE ESTADO DA CULTURA APRESENTA</h2>
     <div id="container1">
-        <h2>A SECRETARIA DE ESTADO DA CULTURA APRESENTA</h2>
-        <h1>ALÉM RIO</h1>
+        
+        <h1 onClick="window.location.reload();">ALÉM RIO</h1>
 
 
         <nav>
 
-            <a>Messi</a>
+            <a onClick="curtaBox('MESSI', texto)">Messi</a>
 
-            <a>Escuela nº574</a>
+            <a onClick="curtaBox('ESCUELA No574', texto)">Escuela nº574</a>
 
-            <a>Citronela</a>
+            <a onClick="curtaBox('CITRONELA', texto)">Citronela</a>
 
-            <a>Caramelo</a>
+            <a onClick="curtaBox('CARAMELO', texto)">Caramelo</a>
 
-            <a>Fronteira de brincar</a>
+            <a onClick="curtaBox('FRONTEIRA DE BRINCAR', texto)">Fronteira de brincar</a>
 
         
-    </nav>
-
-
-    <div id="box">VIDEO
-
-    </div>
-
-
-
-
+        </nav>
     
-        <img id="barra" draggable="false" src="https://i.ibb.co/y0W7Jkw/barra.png" alt="barra logos">
-        <p id="rodape"><span style="user-select: none;">MAIS INFORMAÇOES:<br></span>+9 99 9999 9999<br>alemrio@alemrio.com</p>
     </div>
+    </header>
+
+    <div id="main">
+    <iframe src="https://player.vimeo.com/video/799342992?h=8d898236b8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1080" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trailer - Al&amp;eacute;m Rio">
+
+    </iframe>
+    </div>
+
+
+
+    <footer>
+        <img id="barra" draggable="false" src="https://i.ibb.co/y0W7Jkw/barra.png" alt="barra logos">
+        <p id="rodape"><span style="user-select: none;">MAIS INFORMAÇOES:</span> +9 99 9999 9999 | alemrio@alemrio.com</p>
+    </footer>
+    
 
 
 
@@ -193,11 +257,40 @@
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 <script>
     let bg = document.getElementById('bg');
     let container1 = document.getElementById('container1');
+    let vimeovid = document.getElementById('vimeovid')
 
-    gsap.from("#container1", {opacity: 0, duration: 2});
+    gsap.from("#container1", {opacity: 0, duration: 0.7});
+    gsap.from("#vimeovid", {opacity: 0, duration: 0.7}, 0.7);
+
+</script>
+
+<script>
+    var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
+    
+    player.setVolume(0);
+</script>
+
+<script>
+
+    let escuela = document.getElementById('escuela');
+    let citronela = document.getElementById('citronela');
+    let caramelo = document.getElementById('caramelo');
+    let fronteira = document.getElementById('fronteira');
+
+    let texto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper lorem ac est finibus faucibus. Maecenas ac dapibus quam. Mauris iaculis augue vel maximus blandit. Donec semper tincidunt nulla, sit amet tempor metus laoreet et. Vestibulum vehicula lectus et tristique commodo. Nunc id euismod nisi. Phasellus et urna eget sapien tempor mattis sit amet in metus. Aliquam nec quam vel quam interdum imperdiet. Curabitur efficitur molestie finibus.";
+
+
+    let main = document.getElementById('main');
+
+    curtaBox = (titulo, texto, img1, img2, im3) => { 
+        main.innerHTML =
+        "<div class='curtabox'>" + 
+        "<h3 class='h1curta'>" + titulo + "</h3><br><br><p class='txtcurta'>" + texto + "</p><br><br><div id='imgbox'><div id='img1' style='background-color: red; ; width: 360px; height: 240px;'>1</div><div id='img2' style='background-color: blue; width: 360px; height: 240px;'>2</div><div id='img3' style='background-color: green; ; width: 360px; height: 240px; margin-bottom: 75px;'>3</div></div></div>" }
 
 </script>
 </html>

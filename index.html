@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/wot0lzm.css">
     <link rel="stylesheet" href="https://use.typekit.net/wot0lzm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
 
     <style>
 
@@ -65,9 +68,8 @@
         }
 
         p {
-            font-family: Arial;
-            font-stretch: ultra-condensed;
-        }
+            font-family: 'Roboto', sans-serif;
+       }
 
         header {
             background-color: #282828;
@@ -184,6 +186,9 @@
   #imgbox {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .h1curta {
@@ -195,7 +200,9 @@
   }
 
   .txtcurta {
-    padding: 00 25vw 00 25vw;
+    padding: 00 30vw 5vh 30vw;
+    font-size: 1.2em;
+    font-weight: 200;
   }
 
   .imgcurtas {
@@ -203,10 +210,21 @@
     height: 360;
   }
 
+  .imagens {
+    width: 40%;
+    height: auto;
+  }
+
+  b {
+    font-weight: 900;
+  }
+
 
 
 
     </style>
+
+
 </head>
 <body>
     <img id="bg" draggable="false" src="https://i.ibb.co/NWj4MDs/5-1024x767.png" alt="rio paraná">
@@ -219,7 +237,7 @@
 
         <nav>
 
-            <a onClick="curtaBox('MESSI', texto)">Messi</a>
+            <a onClick="curtaBox('Messi - Ep. 03', messitxt, mImg[0], mImg[1], mImg[2], mImg[3])">Messi</a>
 
             <a onClick="curtaBox('ESCUELA No574', texto)">Escuela nº574</a>
 
@@ -227,7 +245,7 @@
 
             <a onClick="curtaBox('CARAMELO', texto)">Caramelo</a>
 
-            <a onClick="curtaBox('FRONTEIRA DE BRINCAR', texto)">Fronteira de brincar</a>
+            <a onClick="curtaBox('FRONTEIRA DE BRINCAR', fronteiratxt, fImg[0], fImg[1], fImg[2], fImg[3])">Fronteira de brincar</a>
 
         
         </nav>
@@ -244,8 +262,7 @@
 
 
     <footer>
-        <img id="barra" draggable="false" src="https://i.ibb.co/y0W7Jkw/barra.png" alt="barra logos">
-        <p id="rodape"><span style="user-select: none;">MAIS INFORMAÇOES:</span> +9 99 9999 9999 | alemrio@alemrio.com</p>
+        <img id="barra" draggable="false" src="https://i.ibb.co/t29PKmt/barra2.png" alt="barra logos">
     </footer>
     
 
@@ -285,13 +302,21 @@
 
     let texto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper lorem ac est finibus faucibus. Maecenas ac dapibus quam. Mauris iaculis augue vel maximus blandit. Donec semper tincidunt nulla, sit amet tempor metus laoreet et. Vestibulum vehicula lectus et tristique commodo. Nunc id euismod nisi. Phasellus et urna eget sapien tempor mattis sit amet in metus. Aliquam nec quam vel quam interdum imperdiet. Curabitur efficitur molestie finibus.";
 
+    let messitxt = "<b>Sinopse</b><br> 09 de dezembro de 2022, quartas de final da copa do mundo. Na cidade fronteiriça de El Soberbio, Edu está de férias e acompanha junto de sua família o jogo Argentina X Holanda. <br><br> <b>Com Eduardo Flores Perassolo</b> <br><br>Marta Flores<br>Oscar Persassolo<br>Paula Flores Perassolo<br>Agustina Flores Persassolo<br><br><b>Equipe</b><br>Realizado por Camila Acosta e Henrique Lahude<br>Produção Nicolas Gomes Portillo<br>Montagem<br>André Berzagui<br>Mixagem<br>Otávio Vassão";
+
+    let mImg = ["https://i.ibb.co/M65W42Q/vlcsnap-2023-02-12-11h07m21s679.jpg", "https://i.ibb.co/8zTnkyg/vlcsnap-2023-02-12-11h07m59s861.jpg", "https://i.ibb.co/NLJWc70/vlcsnap-2023-02-12-11h10m18s270.jpg", "https://i.ibb.co/8j7VDSv/vlcsnap-2023-02-12-11h12m26s174.jpg"]
+
+    let fronteiratxt = "<b>Sinopse</b> <br><br>No interior do Rio Grande de Sul, estudantes da Escola Estadual Básica Tiradentes  participam de uma oficina audiovisual. Desde seus celulares, recortam, armazenam e organizam imagens da escola, da cidade e da fronteira.<br><br><b>Equipe</b><br><br>Realização<br>Ana Carolina Hermann<br>Arthur Gabriel Estraich Pothin<br>Caroline Ferreira<br>Eduarda Alves Ledur<br>Emilly Diedrich<br>Francini Eduarda Wagner Weber<br>Gabriel Back<br>Guilherme H. Hilger<br>Guilherme Luft Jandrey<br>Isadora Ferreira<br>Juliane Nino<br>Kemili Raíssa Weber<br>Maísa Tatiele Martha Nails<br>Miguel Afonso Werner<br>Miguel Welter Bonfanti<br>Romana Emanueli Parode da Rosa<br>Sara Hermes<br>Tainá Laís Rohr<br>Vitória Kaufmann<br><br>Coordenação <br>Henrique Lahude<br><br>Professora responsável<br>Daniela Kaufman Padilha<br><br>Oficina audiovisual<br>Henrique Lahude e Gabriela Poester"
+
+    let fImg = ["https://i.ibb.co/xGWY0gh/vlcsnap-2023-02-12-13h33m20s881.png", "https://i.ibb.co/k3vbHp9/vlcsnap-2023-02-12-13h27m35s150.png", "https://i.ibb.co/dL67xzx/vlcsnap-2023-02-12-13h26m20s832.png", "https://i.ibb.co/CsH700Y/vlcsnap-2023-02-12-10h47m04s223.png"];
+
 
     let main = document.getElementById('main');
 
-    curtaBox = (titulo, texto, img1, img2, im3) => { 
+    curtaBox = (titulo, texto, img1, img2, img3, img4) => { 
         main.innerHTML =
         "<div class='curtabox'>" + 
-        "<h3 class='h1curta'>" + titulo + "</h3><br><br><p class='txtcurta'>" + texto + "</p><br><br><div id='imgbox'><div id='img1' style='background-color: red; ; width: 360px; height: 240px;'>1</div><div id='img2' style='background-color: blue; width: 360px; height: 240px;'>2</div><div id='img3' style='background-color: green; ; width: 360px; height: 240px; margin-bottom: 75px;'>3</div></div></div>" }
+        "<h3 class='h1curta'>" + titulo + "</h3><br><br><p class='txtcurta'>" + texto + "</p><br><br><div id='imgbox'><img class='imagens' src='" + img1 + "' alt='foto 1'><img class='imagens' src='" + img2 + "' alt='foto 2'><br><br><img class='imagens' src='" + img3 + "' alt='foto 3'><img class='imagens' src='" + img4 + "' alt='foto 4'></div><br><br><br><br>"  }
 
 </script>
 </html>

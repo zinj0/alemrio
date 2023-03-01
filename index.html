@@ -1,262 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALÉM RIO</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/S5F8Gng/E-A-logo22-0-1x-0-1x.png">
 
     <link rel="stylesheet" href="https://use.typekit.net/wot0lzm.css">
     <link rel="stylesheet" href="https://use.typekit.net/wot0lzm.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Roboto:wght@300;700;900&display=swap"rel="stylesheet">
 
-    <style>
+    <link rel="stylesheet" href="index.css">
 
-        html { 
-            font-size: 100%;
-        }
-
-
-        * {
-            margin: 0px;
-            padding: 0px;
-            color: white;
-            font-family: "nimbus-sans", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        ::selection {
-        color: rgb(26, 26, 26);
-        background: rgb(255, 255, 255)
-        }
-
-        body {
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow-x: hidden!important;
-            
-        }
-
-        #bg {
-            position: fixed;
-            width: 100vw;
-            z-index: -1;
-            opacity: 0.8;
-            user-select: none;
-        }
-
-        h1 {
-            font-size: 4em;
-            font-family: "baskerville-display-pt", serif;
-            font-weight: 400;
-            font-style: normal;
-            cursor: pointer;
-        }
-
-        h2 {
-            font-size: 0.8rem;
-
-        }
-
-        td {
-            text-align: center
-        }
-
-        p {
-            font-family: 'Roboto', sans-serif;
-       }
-
-        header {
-            background-color: #282828;
-
-
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        #container1 {
-            width: 100vw;
-            padding-top: 4vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        nav {
-            display: flex;
-            flex-direction: row;
-            font-size: 1.3em;
-            text-align: center;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding-left: 5%;
-            
-        }
-
-        #box {
-            width: 55em;
-            height: 30em;
-            background-color: black;
-        }
-
-        iframe {
-            margin: 5vh;
-        }
-
-        footer {
-            background-color: #282828;
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            padding: 5vh;
-
-        }
-    
-
-        a {
-            margin: 30px;
-            text-decoration: none;
-            color: white;
-            cursor: pointer;
-            user-select: none;
-            white-space: nowrap; 
-            text-overflow: clip;
-            border-bottom: 2px solid transparent;
-            padding: 5px;
-            transition-duration: 0.2s;
-        }
-        a:hover {
-            border-bottom: 2px solid white;
-        }
-        a:active {
-            color: grey;
-            border-bottom: 2px solid grey;
-        }
-
-        #barra {
-            width: 60em;
-            user-select: none;
-        }
-
-        #rodape {
-            padding: 5vh;
-        }
-
-        /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #8f8f8f #f2f2f284;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 3px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #cdd4df;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #8f8f8f;
-    border-radius: 0px;
-    border: 3px none #ffffff;
-  }
-  
-
-  .curtabox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #imgbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .h1curta {
-    padding: 10vh 00 0vh 00;
-    font-size: 3em;
-            font-family: "baskerville-display-pt", serif;
-            font-weight: 400;
-            font-style: normal;
-  }
-
-  .txtcurta {
-    padding: 00 30vw 5vh 30vw;
-    font-size: 1.2em;
-    font-weight: 200;
-  }
-
-  .imgcurtas {
-    width: 480;
-    height: 360;
-  }
-
-  .imagens {
-    width: 40%;
-    height: auto;
-  }
-
-  b {
-    font-weight: 900;
-  }
-
-
-
-
-    </style>
 
 
 </head>
+
 <body>
     <img id="bg" draggable="false" src="https://i.ibb.co/NWj4MDs/5-1024x767.png" alt="rio paraná">
     <header>
-    <h2>A SECRETARIA DE ESTADO DA CULTURA APRESENTA</h2>
-    <div id="container1">
-        
-        <h1 onClick="window.location.reload();">ALÉM RIO</h1>
+        <h2>A SECRETARIA DE ESTADO DA CULTURA APRESENTA</h2>
+        <div id="container1">
+
+            <h1 onClick="window.location.reload();">ALÉM RIO</h1>
+
+            <nav>
+                <a onClick="curtaBox(fronteira[0], fronteira[1], fronteira[2], fronteira[3], fronteira[4], fronteira[5])">Fronteira de Brincar</a>
+
+                <a onClick="curtaBox(alem[0], alem[1], alem[2], alem[3], alem[4], alem[5])">Além Rio</a>
+                            
+                <a onClick="curtaBox(messi[0], messi[1], messi[2], messi[3], messi[4], messi[5])">Messi</a>
+
+                <a onClick="curtaBox(escuela[0], escuela[1], escuela[2], escuela[3], escuela[4], escuela[5])">Escuela Rural Nº574</a>
+
+                <a onClick="curtaBox(juego[0], juego[1], juego[2], juego[3], juego[4], juego[5])">Corte y Juego</a>
+                
 
 
-        <nav>
 
-            <a onClick="curtaBox('Messi - Ep. 03', messitxt, mImg[0], mImg[1], mImg[2], mImg[3])">Messi</a>
+            </nav>
 
-            <a onClick="curtaBox('ESCUELA No574', texto)">Escuela nº574</a>
-
-            <a onClick="curtaBox('CITRONELA', texto)">Citronela</a>
-
-            <a onClick="curtaBox('CARAMELO', texto)">Caramelo</a>
-
-            <a onClick="curtaBox('FRONTEIRA DE BRINCAR', fronteiratxt, fImg[0], fImg[1], fImg[2], fImg[3])">Fronteira de brincar</a>
-
-        
-        </nav>
-    
-    </div>
+        </div>
     </header>
 
     <div id="main">
-    <iframe src="https://player.vimeo.com/video/799342992?h=8d898236b8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1080" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trailer - Al&amp;eacute;m Rio">
+        <iframe
+            src="https://player.vimeo.com/video/799342992?h=8d898236b8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            width="1080" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+            title="Trailer - Al&amp;eacute;m Rio">
 
-    </iframe>
+        </iframe>
     </div>
 
 
@@ -264,59 +61,32 @@
     <footer>
         <img id="barra" draggable="false" src="https://i.ibb.co/t29PKmt/barra2.png" alt="barra logos">
     </footer>
-    
-
-
-
-
-
-
-
 
 </body>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script src="https://player.vimeo.com/api/player.js"></script>
+<script src="conteudo.js"></script>
+
+<!-- ANIMACAO -->
 <script>
     let bg = document.getElementById('bg');
     let container1 = document.getElementById('container1');
     let vimeovid = document.getElementById('vimeovid')
 
-    gsap.from("#container1", {opacity: 0, duration: 0.7});
-    gsap.from("#vimeovid", {opacity: 0, duration: 0.7}, 0.7);
+    gsap.from("#container1", { opacity: 0, duration: 0.7 });
+    gsap.from("#vimeovid", { opacity: 0, duration: 0.7 }, 0.7);
 
 </script>
 
+<!-- VIMEO -->
 <script>
     var iframe = document.querySelector('iframe');
     var player = new Vimeo.Player(iframe);
-    
+
     player.setVolume(0);
 </script>
 
-<script>
-
-    let escuela = document.getElementById('escuela');
-    let citronela = document.getElementById('citronela');
-    let caramelo = document.getElementById('caramelo');
-    let fronteira = document.getElementById('fronteira');
-
-    let texto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper lorem ac est finibus faucibus. Maecenas ac dapibus quam. Mauris iaculis augue vel maximus blandit. Donec semper tincidunt nulla, sit amet tempor metus laoreet et. Vestibulum vehicula lectus et tristique commodo. Nunc id euismod nisi. Phasellus et urna eget sapien tempor mattis sit amet in metus. Aliquam nec quam vel quam interdum imperdiet. Curabitur efficitur molestie finibus.";
-
-    let messitxt = "<b>Sinopse</b><br> 09 de dezembro de 2022, quartas de final da copa do mundo. Na cidade fronteiriça de El Soberbio, Edu está de férias e acompanha junto de sua família o jogo Argentina X Holanda. <br><br> <b>Com Eduardo Flores Perassolo</b> <br><br>Marta Flores<br>Oscar Persassolo<br>Paula Flores Perassolo<br>Agustina Flores Persassolo<br><br><b>Equipe</b><br>Realizado por Camila Acosta e Henrique Lahude<br>Produção Nicolas Gomes Portillo<br>Montagem<br>André Berzagui<br>Mixagem<br>Otávio Vassão";
-
-    let mImg = ["https://i.ibb.co/M65W42Q/vlcsnap-2023-02-12-11h07m21s679.jpg", "https://i.ibb.co/8zTnkyg/vlcsnap-2023-02-12-11h07m59s861.jpg", "https://i.ibb.co/NLJWc70/vlcsnap-2023-02-12-11h10m18s270.jpg", "https://i.ibb.co/8j7VDSv/vlcsnap-2023-02-12-11h12m26s174.jpg"]
-
-    let fronteiratxt = "<b>Sinopse</b> <br><br>No interior do Rio Grande de Sul, estudantes da Escola Estadual Básica Tiradentes  participam de uma oficina audiovisual. Desde seus celulares, recortam, armazenam e organizam imagens da escola, da cidade e da fronteira.<br><br><b>Equipe</b><br><br>Realização<br>Ana Carolina Hermann<br>Arthur Gabriel Estraich Pothin<br>Caroline Ferreira<br>Eduarda Alves Ledur<br>Emilly Diedrich<br>Francini Eduarda Wagner Weber<br>Gabriel Back<br>Guilherme H. Hilger<br>Guilherme Luft Jandrey<br>Isadora Ferreira<br>Juliane Nino<br>Kemili Raíssa Weber<br>Maísa Tatiele Martha Nails<br>Miguel Afonso Werner<br>Miguel Welter Bonfanti<br>Romana Emanueli Parode da Rosa<br>Sara Hermes<br>Tainá Laís Rohr<br>Vitória Kaufmann<br><br>Coordenação <br>Henrique Lahude<br><br>Professora responsável<br>Daniela Kaufman Padilha<br><br>Oficina audiovisual<br>Henrique Lahude e Gabriela Poester"
-
-    let fImg = ["https://i.ibb.co/xGWY0gh/vlcsnap-2023-02-12-13h33m20s881.png", "https://i.ibb.co/k3vbHp9/vlcsnap-2023-02-12-13h27m35s150.png", "https://i.ibb.co/dL67xzx/vlcsnap-2023-02-12-13h26m20s832.png", "https://i.ibb.co/CsH700Y/vlcsnap-2023-02-12-10h47m04s223.png"];
 
 
-    let main = document.getElementById('main');
-
-    curtaBox = (titulo, texto, img1, img2, img3, img4) => { 
-        main.innerHTML =
-        "<div class='curtabox'>" + 
-        "<h3 class='h1curta'>" + titulo + "</h3><br><br><p class='txtcurta'>" + texto + "</p><br><br><div id='imgbox'><img class='imagens' src='" + img1 + "' alt='foto 1'><img class='imagens' src='" + img2 + "' alt='foto 2'><br><br><img class='imagens' src='" + img3 + "' alt='foto 3'><img class='imagens' src='" + img4 + "' alt='foto 4'></div><br><br><br><br>"  }
-
-</script>
 </html>

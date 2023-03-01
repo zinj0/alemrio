@@ -3,7 +3,7 @@
 
 let fronteira = [
         // TITULO
-        "Fronteira de Brincar - Ep. 01",
+        "Fronteira de Brincar - Ep. 1",
         // SINÓPSE
         "No interior do Rio Grande de Sul, estudantes da Escola Estadual Básica Tiradentes  participam de uma oficina audiovisual. Desde seus celulares, recortam, armazenam e organizam imagens da escola, da cidade e da fronteira.<br><br>Realização de Ana Carolina Hermann, Arthur Gabriel Estraich Pothin, Caroline Ferreira, Eduarda Alves Ledur, Emilly Diedrich, Francini Eduarda Wagner Weber, Gabriel Back, Guilherme H. Hilger, Guilherme Luft Jandrey, Isadora Ferreira, Juliane Nino, Kemili Raíssa Weber, Maísa Tatiele Martha Nails, Miguel Afonso Werner, Miguel Welter Bonfanti, Romana Emanueli Parode da Rosa, Sara Hermes, Tainá Laís Rohr, Vitória Kaufmann<br><br>Coordenação de Henrique Lahude<br><br>Professora responsável Daniela Kaufman Padilha<br><br>Oficina audiovisual de Henrique Lahude e Gabriela Poester", 
         // IMAGENS
@@ -15,9 +15,9 @@ let fronteira = [
 
 let alem = [
         // TÍTULO
-        "", 
+        "Além Rio - Ep. 2", 
         // SINOPSE
-        "",
+        "Dani vive o fim de sua adolescência em uma pequena comunidade na fronteira entre Brasil e Argentina. Acompanhando o navegar clandestino de pessoas e mercadorias, ela aguarda a sua vez de realizar a travessia.<br><br><b>Com Daniela Schmitz Oliveira, Roselete Schmitz, Daiane Letícia Schmitz Oliveira, Jair Dornelles Oliveira, Daniel Felipe Schmitz Oliveira, Gabriel Henrique Schmitz, Guilherme Augusto Schmitz Oliveira.</b><br>Realização de Henrique Lahude<br>Produção de Nicolas Gomes Portillo<br>Montagem de André Berzagui<br>Mixagem de Otávio Vassão",
         // IMAGENS 
         "https://i.ibb.co/ZdC4Fcq/vlcsnap-2023-02-12-11h05m52s896.jpg", 
         "https://i.ibb.co/DCBXP1r/vlcsnap-2023-02-12-10h54m39s202.jpg", 
@@ -28,9 +28,9 @@ let alem = [
 
 let messi = [
         // TÍTULO
-        "Messi Ep - 03", 
+        "Messi Ep - 3", 
         // SINOPSE
-        "09 de dezembro de 2022, quartas de final da copa do mundo. Na cidade fronteiriça de El Soberbio, Edu está de férias e acompanha junto de sua família o jogo Argentina X Holanda. <br><br><b>Com Eduardo Flores Perassolo, Marta Flores, Oscar Persassolo, Paula Flores Perassolo, Agustina Flores Persassolo</b><br><br>Realizado por Camila Acosta e Henrique Lahude<br>Produção Nicolas Gomes Portillo<br>Montagem André Berzagui<br>Mixagem Otávio Vassão",
+        "09 de dezembro de 2022, quartas de final da copa do mundo. Na cidade fronteiriça de El Soberbio, Edu está de férias e acompanha junto de sua família o jogo Argentina X Holanda. <br><br><b>Com Eduardo Flores Perassolo, Marta Flores, Oscar Persassolo, Paula Flores Perassolo, Agustina Flores Persassolo.</b><br><br>Realizado por Camila Acosta e Henrique Lahude<br>Produção Nicolas Gomes Portillo<br>Montagem André Berzagui<br>Mixagem Otávio Vassão",
         // IMAGENS 
         "https://i.ibb.co/M65W42Q/vlcsnap-2023-02-12-11h07m21s679.jpg", 
         "https://i.ibb.co/8zTnkyg/vlcsnap-2023-02-12-11h07m59s861.jpg", 
@@ -40,7 +40,7 @@ let messi = [
 
 let escuela = [
     // TÍTULO
-    "Escuela Rural Nº574 - Ep. 04", 
+    "Escuela Rural Nº574 - Ep. 4", 
     // SINOPSE
     "Uma pequena escola rural na fronteira da Argentina com o Brasil se prepara para seu ato de fim de ano.<br><br><b>Apresentando Estudantes, professores e familiares da Escuela Rural nº 574</b><br><br>Diretor Gilson Reinher<br>Realizado por Camila Acosta, Daniel Perez e Henrique Lahude<br>Produção Nicolas Gomes Portillo<br>Montagem André Berzagui<br>Mixagem Otávio Vassão",
     // IMAGENS 
@@ -52,7 +52,7 @@ let escuela = [
 
 let juego = [
     // TÍTULO
-    "Corte y juego - Ep. 05",
+    "Corte y juego - Ep. 5",
     // SINOPSE
     "É verão na margem direita do Rio Uruguai. Para a Família Moreira é tempo de férias escolares e da colheita da citronela <br><br><b>Apresentando Família Moreira</b><br><br>Realizado por Camila Acosta, Daniel Perez e Henrique Lahude<br>Produção Nicolas Gomes Portillo<br>Montagem André Berzagui<br>Mixagem Otávio Vassão",
     // IMAGENS 
